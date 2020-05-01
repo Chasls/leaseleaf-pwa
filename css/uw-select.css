@@ -1,0 +1,47 @@
+.uw-hidden {
+  height: 0;
+  -webkit-appearance: none;
+  border: none;
+  width: 0;
+  z-index: -1;
+}
+
+.uw-select {
+  position: relative;
+  border: 1px solid;
+  cursor: pointer;
+  min-width: 150px;
+  text-align: center;
+}
+
+.uw-select .input {
+  padding: 5px 15px;
+}
+
+.uw-select__options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid;
+  display: none;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.uw-select__options.open {
+  display: block;
+}
+
+.uw-select__option {
+  cursor: pointer;
+  padding: 5px 15px;
+  background-color: white;
+}
+
+.uw-select__option:hover {
+  background-color: lightgrey;
+}
+
+.uw-select__option[data-selected="true"] {
+  background-color: grey;
+}
